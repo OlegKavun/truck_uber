@@ -1,0 +1,5 @@
+{
+  "PORT":8080,
+  "mongoUrl": "mongodb+srv://oleg:oleg@cluster0.erevi.mongodb.net/NodeHW?retryWrites=true&w=majority",
+  "jwtSecret": "nodehomework"
+}

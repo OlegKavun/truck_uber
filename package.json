@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "serve": "nodemon app.js"
+    "serve": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run serve\" \"npm run client\""
   },
   "keywords": [
     "Node",
@@ -17,6 +19,7 @@
   "dependencies": {
     "bcrypt": "^5.0.1",
     "config": "^3.3.3",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "generate-password": "^1.6.0",
     "joi": "^17.4.0",
@@ -24,6 +27,8 @@
     "mongoose": "^5.11.13"
   },
   "devDependencies": {
+    "concurrently": "^6.0.1",
+    "cross-env": "^7.0.3",
     "eslint": "^7.20.0",
     "eslint-config-google": "^0.14.0",
     "nodemon": "^2.0.7"

@@ -4,8 +4,6 @@ info:
   version: "1.0.0"
   title: "LAB FE NodeJS HW #3"
   termsOfService: "http://swagger.io/terms/"
-  contact:
-    email: "Kyrylo_Yezhov@epam.com"
 host: "localhost:8080"
 basePath: "/"
 tags:
